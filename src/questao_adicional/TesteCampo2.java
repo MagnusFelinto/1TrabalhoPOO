@@ -6,11 +6,6 @@ import java.util.Scanner;
 public class TesteCampo2 {
 
 	public static void main(String[] args) {
-		/**
-		
-		 *  Realize 30 movimentos da bola no campo. Após cada movimento
-		 *  exiba os dados da bola.
-		 **/
 		Scanner ler = new Scanner(System.in);
 		
 		System.out.println("Informe os dados do campo(altura e largura)");
@@ -33,7 +28,7 @@ public class TesteCampo2 {
 		double velo  = aleatorio.nextDouble((max - min) + 1) + min;;
 		
 		Bola bola 			  = new Bola(Pos_incial, velo, velo);
-		CampoRetangular campo = new CampoRetangular(Pos_incial, min, velo, bola);
+		CampoRetangular campo = new CampoRetangular(Pos_incial, velo, velo, bola);
 		for (int i = 1; i < 31; i++) {
 			campo.movimentaBola();
 			System.out.println(i + ": " + campo.getBola().toString());

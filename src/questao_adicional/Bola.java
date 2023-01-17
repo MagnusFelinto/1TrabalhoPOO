@@ -5,8 +5,6 @@ public class Bola {
 	private ParOrdenado posicao;
 	private double vel_hori, vel_vert;
 	final private double raio = 2.5;
-	// private ParOrdenado cordenadas;
-	// private double cordenadaX, cordenadaY, ox=1, oy=1;
 	
 	public Bola(ParOrdenado posCenter, double vel_hori, double vel_vert) {
 		super();
