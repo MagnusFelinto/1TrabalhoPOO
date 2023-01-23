@@ -30,17 +30,19 @@ public class CampoRetangular {
 	}
 
 	public boolean tocouSuperior() {
+		//	     21                  19 + 3  
 		if(altura/2 <= bola.getPosicao().getY()+ bola.getRaio())
 			return true;
 		return false;
 	}
 	public boolean tocouInferior() {
-		if(-altura/2 >= bola.getPosicao().getY()+ bola.getRaio())
+		if(-altura/2 >= bola.getPosicao().getY()- bola.getRaio())
 			return true;
 		return false;
 	}
 	public boolean tocouEsquerda() {
-		if(-comprimento/2 >= bola.getPosicao().getX()+ bola.getRaio())
+		
+		if(-comprimento/2 >= bola.getPosicao().getX()- bola.getRaio())
 			return true;
 		return false;
 	}

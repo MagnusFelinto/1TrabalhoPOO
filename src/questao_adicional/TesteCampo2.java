@@ -17,23 +17,21 @@ public class TesteCampo2 {
 		
 		System.out.println("Informe o raio da bola");
 		System.out.println("Raio: ");
-		String Raio  = ler.next();
-		
+		double Raio  = ler.nextDouble();
+		ler.close();
 		ParOrdenado Pos_incial = new ParOrdenado(0, 0);
 		
 		Random aleatorio = new Random();
-		double total = Double.parseDouble(Largura) +Double.parseDouble(Altura);
+		double total = Double.parseDouble(Largura) + Double.parseDouble(Altura);
 		double max   = (10*total)/100;
 		double min   = (5*total)/100;
-		double velo  = aleatorio.nextDouble((max - min) + 1) + min;;
+		double velo  = aleatorio.nextDouble((max - min) + 1) + min;
 		
-		Bola bola 			  = new Bola(Pos_incial, velo, velo);
-		CampoRetangular campo = new CampoRetangular(Pos_incial, velo, velo, bola);
+		Bola bola 			  = new Bola(Pos_incial, velo, velo, Raio);
+		CampoRetangular campo = new CampoRetangular(Pos_incial, Double.parseDouble(Largura), Double.parseDouble(Altura), bola);
 		for (int i = 1; i < 31; i++) {
 			campo.movimentaBola();
 			System.out.println(i + ": " + campo.getBola().toString());
 		}
-	
 	}
-
 }

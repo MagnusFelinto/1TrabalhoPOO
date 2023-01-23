@@ -4,24 +4,24 @@ public class Bola {
 
 	private ParOrdenado posicao;
 	private double vel_hori, vel_vert;
-	final private double raio = 2.5;
+	final private double raio;
 	
-	public Bola(ParOrdenado posCenter, double vel_hori, double vel_vert) {
+	public Bola(ParOrdenado posCenter, double vel_hori, double vel_vert, double raio) {
 		super();
 		this.posicao 	= posCenter;
 		this.vel_hori 	= vel_hori;
 		this.vel_vert 	= vel_vert;
+		this.raio 		= raio;
 	}
 	
 	public void movimenta(){
 		posicao.setX(posicao.getX() + vel_hori);
 		posicao.setY(posicao.getY() + vel_vert);
-
 	}
 	
 	@Override
 	public String toString() {
-		return "A bola está na posição " +this.posicao.toString()+ " se movendo a uma velocidade ("+(vel_hori)+","+(vel_vert)+") pixels por movimento";
+		return "A bola está na posição " + this.posicao.toString()+ " se movendo a uma velocidade ("+(vel_hori)+","+(vel_vert)+") pixels por movimento";
 	}
 
 	public ParOrdenado getPosicao() {

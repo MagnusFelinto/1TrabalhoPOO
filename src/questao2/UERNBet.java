@@ -1,4 +1,4 @@
-package questao3;
+package questao2;
 public class UERNBet {
 	public static void efetuarJogo(Evento ev, Resultado resut) {
 		System.out.println("O jogo "+ev.getDescricao()+" os times que iram joga seram "+ev.getTime01()+" vs "+ev.getTime02());

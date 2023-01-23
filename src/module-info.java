@@ -1,8 +1,6 @@
 /**
  * 
- */
-/**
- * @author magnu
+ * @author Magnus Felinto
  *
  */
 module POOTrabalho {

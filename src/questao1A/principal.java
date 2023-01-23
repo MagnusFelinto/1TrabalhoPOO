@@ -1,4 +1,4 @@
-package questao2;
+package questao1A;
 import java.util.Scanner;
 public class principal{
 	public static void main(String[] args) {
@@ -7,7 +7,7 @@ public class principal{
 		System.out.println("Escreva uma palavra com 5 letras: ");
 		String texto = ler.next();
 		if(texto.length() != 5) {
-			System.out.println("A palavra nao possui a quantidade de letras requerida:");
+			System.out.println("A palavra nao possui a quantidade de letras requerida de letras:");
 			return;
 		}
 		 char data[] = texto.toCharArray();
